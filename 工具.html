@@ -28,7 +28,6 @@ body{padding:20px 15px;background:radial-gradient(ellipse at top, #0d1a2e 0%, #0
 .btn:hover{background:#ff6b00;color:#050810;box-shadow:0 0 25px #ff6b00}
 .btn.del{border-color:#ff3b3b;color:#ff3b3b;background:rgba(255,59,59,0.1);}
 .btn.del:hover{background:#ff3b3b;color:#100505;box-shadow:0 0 25px #ff3b3b}
-.warn{background:rgba(255,59,59,0.1);border-left:3px solid #ff3b3b;padding:12px;border-radius:4px;font-size:13px;color:#ff6b6b;margin-bottom:15px;line-height:1.6;}
 .result{margin-top:15px;padding:15px;background:rgba(0,20,40,0.6);border-left:3px solid #00ff88;border-radius:4px;word-break:break-all;font-size:13px;color:#00ff88;display:none;}
 .result.show{display:block}
 .result.err{border-left-color:#ff3b3b;color:#ff6b6b;background:rgba(30,0,0,0.6);}
@@ -62,10 +61,6 @@ body{padding:20px 15px;background:radial-gradient(ellipse at top, #0d1a2e 0%, #0
 <div class="panel danger" id="panel1">
     <div class="row"><label>标识（要删除的设备）</label><input type="text" id="删除标识" placeholder="例如 abcd"></div>
     <div class="row"><label>GitHub Token</label><input type="password" id="token" placeholder="ghp_xxxxx"></div>
-    <div class="warn">
-        ⚠️ 危险操作：会**永久删除** GitHub 仓库里的 <code>wuzi_标识.json</code> 文件。<br>
-        删完后网页会显示「没有数据」。
-    </div>
     <button class="btn del" onclick="删除数据()">🗑 确认删除</button>
     <div class="result" id="结果2"></div>
 </div>
